@@ -95,6 +95,81 @@ h4 {
   padding-block: clamp(4.5rem, 9vw, 8rem);
 }
 
+.marquee-band {
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.marquee__window {
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 4%,
+    black 96%,
+    transparent
+  );
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee__track.is-paused {
+  animation-play-state: paused;
+}
+
+.marquee__group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.75rem;
+  white-space: nowrap;
+  color: var(--muted);
+  font-family: var(--font-heading), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.marquee__item::after {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--accent);
+  content: "";
+}
+
+.marquee__toggle {
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
+  color: var(--foreground);
+  font-size: 0.7rem;
+  font-weight: 600;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.marquee__toggle:hover {
+  background: var(--foreground);
+  color: var(--background);
+}
+
 .section-heading {
   display: flex;
   flex-direction: column;
@@ -163,6 +238,12 @@ h4 {
   transform: rotate(-24deg);
 }
 
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 :root[data-theme="dark"] .project-art--gaming {
   background: linear-gradient(135deg, #344625 5%, #523d53 100%);
 }
@@ -187,6 +268,23 @@ h4 {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .marquee__track {
+    width: 100%;
+    animation: none;
+  }
+
+  .marquee__group {
+    flex: 0 1 100%;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    padding-right: 0;
+  }
+
+  .marquee__group + .marquee__group,
+  .marquee__toggle {
+    display: none;
   }
 }
 

@@ -33,7 +33,7 @@ export default function Services() {
       aria-labelledby="services-title"
     >
       <div className="max-w-content px-page mx-auto">
-        <div className="section-heading">
+        <div className="section-heading" data-reveal>
           <div>
             <p className="eyebrow">What I do</p>
             <h2 id="services-title" className="section-title">
@@ -49,6 +49,7 @@ export default function Services() {
             <li
               key={service.number}
               className="service-card group border-border bg-background hover:border-foreground/30 rounded-3xl border p-6 transition-colors sm:p-8"
+              data-reveal
             >
               <span className="font-display text-muted text-sm font-medium">
                 {service.number}

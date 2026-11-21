@@ -18,7 +18,7 @@ export default function About() {
       aria-labelledby="about-title"
     >
       <div className="max-w-content px-page mx-auto grid gap-12 md:grid-cols-[1.1fr_0.9fr] md:gap-16">
-        <div>
+        <div data-reveal>
           <p className="eyebrow text-background/60">A little about me</p>
           <h2
             id="about-title"
@@ -39,7 +39,7 @@ export default function About() {
             Get in touch
           </Button>
         </div>
-        <div className="grid content-start gap-8">
+        <div className="grid content-start gap-8" data-reveal>
           <div>
             <h3 className="text-background/55 text-xs font-semibold tracking-[0.18em] uppercase">
               Tools I work with

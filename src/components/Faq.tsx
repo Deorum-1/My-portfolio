@@ -30,7 +30,7 @@ export default function Faq() {
   return (
     <section id="faq" className="section-space" aria-labelledby="faq-title">
       <div className="max-w-content px-page mx-auto grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
-        <div>
+        <div data-reveal>
           <p className="eyebrow">Good to know</p>
           <h2 id="faq-title" className="section-title">
             A few useful answers.
@@ -42,7 +42,7 @@ export default function Faq() {
         </div>
         <div className="divide-border border-border divide-y border-y">
           {questions.map((item) => (
-            <details key={item.question} className="group py-5">
+            <details key={item.question} className="group py-5" data-reveal>
               <summary className="font-display focus-visible:outline-focus flex cursor-pointer list-none items-start justify-between gap-5 rounded-lg text-lg font-semibold tracking-tight marker:hidden focus-visible:outline-2 focus-visible:outline-offset-4">
                 {item.question}
                 <span

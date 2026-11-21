@@ -11,7 +11,7 @@ export type ProjectCardData = {
 
 export default function ProjectCard({ project }: { project: ProjectCardData }) {
   return (
-    <article className="group min-w-0">
+    <article className="group min-w-0" data-reveal>
       <div
         className={`project-art project-art--${project.visual} border-border relative overflow-hidden rounded-[1.75rem] border`}
         aria-hidden="true"

@@ -38,7 +38,7 @@ export default function Process() {
       aria-labelledby="process-title"
     >
       <div className="max-w-content px-page mx-auto">
-        <div className="section-heading">
+        <div className="section-heading" data-reveal>
           <div>
             <p className="eyebrow">How we work</p>
             <h2 id="process-title" className="section-title">
@@ -54,6 +54,7 @@ export default function Process() {
             <li
               key={step.number}
               className="process-step border-border relative border-l py-5 pl-5 md:border-t md:border-l-0 md:pt-6 md:pr-5 md:pl-0"
+              data-reveal
             >
               <span className="font-display text-muted text-sm font-semibold">
                 {step.number}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Space_Grotesk } from "next/font/google";
 import MotionProvider from "@/components/MotionProvider";
+import ScrollAnimations from "@/components/ScrollAnimations";
 import "./globals.css";
 
 const bodyFont = DM_Sans({
@@ -27,7 +28,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <body>
-        <MotionProvider>{children}</MotionProvider>
+        <MotionProvider>
+          <ScrollAnimations />
+          {children}
+        </MotionProvider>
       </body>
     </html>
   );

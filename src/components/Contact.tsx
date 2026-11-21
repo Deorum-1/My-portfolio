@@ -16,7 +16,7 @@ export default function Contact() {
       aria-labelledby="contact-title"
     >
       <div className="max-w-content px-page mx-auto grid gap-10 md:grid-cols-[1fr_auto] md:items-end">
-        <div>
+        <div data-reveal>
           <p className="eyebrow">Have something in mind?</p>
           <h2
             id="contact-title"
@@ -40,7 +40,10 @@ export default function Contact() {
             </Button>
           </div>
         </div>
-        <ul className="flex flex-wrap gap-x-5 gap-y-3 md:max-w-48 md:flex-col md:items-start">
+        <ul
+          className="flex flex-wrap gap-x-5 gap-y-3 md:max-w-48 md:flex-col md:items-start"
+          data-reveal
+        >
           {contacts.slice(2).map((contact) => (
             <li key={contact.label}>
               <a

@@ -29,7 +29,7 @@ export default function SelectedWork() {
   return (
     <section id="work" className="section-space" aria-labelledby="work-title">
       <div className="max-w-content px-page mx-auto">
-        <div className="section-heading">
+        <div className="section-heading" data-reveal>
           <div>
             <p className="eyebrow">Selected work</p>
             <h2 id="work-title" className="section-title">
@@ -45,7 +45,10 @@ export default function SelectedWork() {
             <ProjectCard key={project.title} project={project} />
           ))}
         </div>
-        <div className="border-border bg-surface mt-10 flex flex-wrap items-center justify-between gap-4 rounded-3xl border p-6 sm:p-8">
+        <div
+          className="border-border bg-surface mt-10 flex flex-wrap items-center justify-between gap-4 rounded-3xl border p-6 sm:p-8"
+          data-reveal
+        >
           <p className="text-muted max-w-lg text-sm leading-6">
             Have a project in mind? Tell me what you are building and where you
             would like a hand.

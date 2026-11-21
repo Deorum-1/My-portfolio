@@ -12,7 +12,7 @@ export default function BlogPreview() {
       aria-labelledby="blog-title"
     >
       <div className="max-w-content px-page mx-auto">
-        <div className="section-heading">
+        <div className="section-heading" data-reveal>
           <div>
             <p className="eyebrow">Notes from the process</p>
             <h2 id="blog-title" className="section-title">
@@ -29,6 +29,7 @@ export default function BlogPreview() {
             <li
               key={title}
               className="flex flex-col gap-3 py-5 sm:flex-row sm:items-center sm:justify-between"
+              data-reveal
             >
               <span className="font-display text-lg font-medium tracking-tight sm:max-w-2xl">
                 {title}
