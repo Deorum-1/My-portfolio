@@ -87,12 +87,12 @@ Put all your personal details (name, email, links) in `src/lib/site.ts` so you o
 
 ## 5. Phase 2: Design foundations
 
-- [ ] Define colour variables for light and dark mode in `globals.css`.
-- [ ] Load fonts with `next/font` (pick something with character, not default Arial or Inter).
-- [ ] Set a spacing scale and a max content width (about 1100 to 1200px).
-- [ ] Build one `Button` component (primary and outline).
-- [ ] Add a dark mode toggle that respects the system setting.
-- [ ] Set up smooth page scrolling and make every animation respect `prefers-reduced-motion`.
+- [x] Define colour variables for light and dark mode in `globals.css`.
+- [x] Load fonts with `next/font` (pick something with character, not default Arial or Inter).
+- [x] Set a spacing scale and a max content width (about 1100 to 1200px).
+- [x] Build one `Button` component (primary and outline).
+- [x] Add a dark mode toggle that respects the system setting.
+- [x] Set up smooth page scrolling and make every animation respect `prefers-reduced-motion`.
 
 ## 6. Phase 3: Build the pages
 
@@ -244,7 +244,7 @@ Work one phase at a time. After each phase, tell me what changed and what to tes
 |---|---|
 | Project screenshots | To do |
 | Short write-up for each project | To do |
-| Palette and fonts | To decide |
+| Palette and fonts | Warm stone, ink and chartreuse; Space Grotesk + DM Sans |
 | Phone number to display | To confirm |
 | SAI instructor details | Dates left out on purpose |
 | Testimonials | None yet |
