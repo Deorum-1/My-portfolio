@@ -56,10 +56,10 @@ export default function ThemeToggle() {
       variant="outline"
       aria-label={`Switch to ${nextTheme} mode`}
       aria-pressed={theme === "dark"}
-      className="fixed top-4 right-4 z-50 min-h-10 px-4 text-xs sm:top-6 sm:right-6"
+      className="px-3 text-xs"
       onClick={toggleTheme}
     >
-      {theme === "dark" ? "Light mode" : "Dark mode"}
+      {theme === "dark" ? "Light" : "Dark"}
     </Button>
   );
 }

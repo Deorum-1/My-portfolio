@@ -1,0 +1,47 @@
+import Button from "@/components/Button";
+import HeroVisual from "@/components/HeroVisual";
+import { site } from "@/lib/site";
+
+export default function Hero() {
+  return (
+    <section
+      id="top"
+      className="border-border/70 relative overflow-hidden border-b"
+      aria-labelledby="hero-title"
+    >
+      <div className="max-w-content px-page mx-auto grid min-h-[calc(100svh-5rem)] items-center gap-8 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-4 lg:py-20">
+        <div className="relative z-10 max-w-2xl">
+          <p className="border-border bg-surface text-muted mb-6 inline-flex items-center gap-2 rounded-full border px-3.5 py-2 text-xs font-medium">
+            <span
+              className="bg-accent size-2 rounded-full"
+              aria-hidden="true"
+            />
+            {site.availability}
+          </p>
+          <h1
+            id="hero-title"
+            className="font-display max-w-[13ch] text-[clamp(3rem,6.4vw,6.5rem)] leading-[0.94] font-medium tracking-[-0.075em]"
+          >
+            Your business,
+            <span className="text-muted mt-1 block">better online.</span>
+          </h1>
+          <p className="text-muted mt-7 max-w-xl text-base leading-7 sm:text-lg sm:leading-8">
+            I design and build responsive websites and frontends for businesses
+            and teams, from first brief to launch.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button href="#contact">Start a project</Button>
+            <Button href="#work" variant="outline">
+              Explore selected work
+            </Button>
+          </div>
+          <p className="text-muted mt-8 text-sm">
+            {site.title} <span aria-hidden="true">·</span> {site.location}
+          </p>
+        </div>
+        <HeroVisual />
+      </div>
+      <div className="bg-accent/10 pointer-events-none absolute -top-32 -right-36 size-[28rem] rounded-full blur-3xl" />
+    </section>
+  );
+}
