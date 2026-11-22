@@ -1,9 +1,8 @@
 export const site = {
   name: "Oluwaferanmi Sokunbi",
   fullName: "Sokunbi Oluwaferanmi Tantoolorun",
-  title: "Frontend & Web Developer",
-  location: "Abeokuta, Nigeria",
-  availability: "Available for freelance and agency projects",
+  title: "Full-Stack Developer",
+  availability: "Open to freelance and full-time roles",
   email: "feranmiisaac622@gmail.com",
   whatsapp: "https://wa.me/2349059730499",
   github: "https://github.com/Deorum-1",

@@ -2,13 +2,29 @@ import Button from "@/components/Button";
 import { site } from "@/lib/site";
 
 const experience = [
-  "Freelance",
-  "Instructor at SAI",
-  "ICTREC internship",
-  "AI Fluency certification",
+  {
+    role: "Freelance",
+    detail:
+      "Full-stack web development for businesses, agencies, and individuals.",
+  },
+  { role: "Instructor", detail: "SAI" },
+  { role: "Internship", detail: "ICTREC" },
 ];
 
-const skills = ["React", "Next.js", "GSAP", "JavaScript"];
+const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "Appwrite",
+  "GSAP",
+];
+const focusAreas = [
+  "Business websites",
+  "Interactive frontends",
+  "Full-stack web apps",
+  "API development",
+];
 
 export default function About() {
   return (
@@ -27,9 +43,10 @@ export default function About() {
             A thoughtful frontend partner for your next build.
           </h2>
           <p className="text-background/70 mt-6 max-w-xl text-base leading-7">
-            I’m {site.name}, a {site.title} based in {site.location}. I work
-            with businesses and agencies to shape and build web experiences,
-            from a focused business site to an interactive frontend.
+            I’m {site.name}, a {site.title}. I work across the whole product:
+            React and Next.js on the front-end,
+            with Node.js and APIs on the back-end. I turn ideas and designs
+            into responsive, maintainable web experiences.
           </p>
           <p className="text-background/60 mt-4 max-w-xl text-sm leading-6">
             My experience includes freelance work, teaching at SAI, and an
@@ -62,13 +79,36 @@ export default function About() {
             <ul className="divide-background/15 mt-4 divide-y">
               {experience.map((item) => (
                 <li
-                  key={item}
-                  className="text-background/80 py-3 text-sm first:pt-0"
+                  key={item.role}
+                  className="flex flex-col gap-1 py-3 first:pt-0 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
                 >
-                  {item}
+                  <span className="text-background/90 text-sm font-medium">
+                    {item.role}
+                  </span>
+                  <span className="text-background/60 text-sm">
+                    {item.detail}
+                  </span>
                 </li>
               ))}
             </ul>
+          </div>
+          <div>
+            <h3 className="text-background/55 text-xs font-semibold tracking-[0.18em] uppercase">
+              Project focus
+            </h3>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {focusAreas.map((area) => (
+                <li
+                  key={area}
+                  className="border-background/20 text-background/80 rounded-full border px-3 py-1.5 text-sm"
+                >
+                  {area}
+                </li>
+              ))}
+            </ul>
+            <p className="text-background/60 mt-5 text-sm">
+              Certification: AI Fluency
+            </p>
           </div>
         </div>
       </div>

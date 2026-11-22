@@ -1,10 +1,8 @@
-const plannedPosts = [
-  "How I added GSAP scroll animations without slowing the page down",
-  "What a small business should know before hiring a web developer",
-  "React vs Next.js: which one does your website need?",
-];
+import Link from "next/link";
+import { getPosts } from "@/lib/content";
 
 export default function BlogPreview() {
+  const posts = getPosts().slice(0, 3);
   return (
     <section
       id="blog"
@@ -20,26 +18,35 @@ export default function BlogPreview() {
             </h2>
           </div>
           <p className="text-muted max-w-sm text-sm leading-6">
-            Planned topics on frontend development and making good choices for
+            Practical notes on frontend development and making good choices for
             the web.
           </p>
         </div>
         <ul className="divide-border border-border mt-8 divide-y border-y">
-          {plannedPosts.map((title, index) => (
+          {posts.map((post, index) => (
             <li
-              key={title}
+              key={post.slug}
               className="flex flex-col gap-3 py-5 sm:flex-row sm:items-center sm:justify-between"
               data-reveal
             >
-              <span className="font-display text-lg font-medium tracking-tight sm:max-w-2xl">
-                {title}
-              </span>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="font-display text-lg font-medium tracking-tight hover:underline sm:max-w-2xl"
+              >
+                {post.title}
+              </Link>
               <span className="text-muted shrink-0 text-xs font-medium">
-                Planned article · 0{index + 1}
+                {post.readingTime} min read · 0{index + 1}
               </span>
             </li>
           ))}
         </ul>
+        <Link
+          href="/blog"
+          className="text-muted hover:text-foreground mt-6 inline-flex text-sm font-semibold underline underline-offset-4"
+        >
+          Visit the blog
+        </Link>
       </div>
     </section>
   );

@@ -13,15 +13,15 @@ const services = [
   },
   {
     number: "03",
-    title: "React and Next.js web apps",
+    title: "Full-stack web apps",
     description:
-      "Component-based web experiences built around your project’s needs.",
+      "End-to-end products with a polished UI, authentication, APIs and database integration.",
   },
   {
     number: "04",
-    title: "Website redesigns",
+    title: "API development and integration",
     description:
-      "A clearer structure and more considered responsive experience for an existing site.",
+      "Clean APIs and third-party integrations for payments, data, authentication and services.",
   },
 ];
 

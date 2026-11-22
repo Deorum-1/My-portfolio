@@ -26,8 +26,8 @@ export default function Hero() {
             <span className="text-muted mt-1 block">better online.</span>
           </h1>
           <p className="text-muted mt-7 max-w-xl text-base leading-7 sm:text-lg sm:leading-8">
-            I design and build responsive websites and frontends for businesses
-            and teams, from first brief to launch.
+            I design and build complete web products, from polished animated
+            frontends to APIs and back-end systems, from first brief to launch.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="#contact">Start a project</Button>
@@ -35,9 +35,7 @@ export default function Hero() {
               Explore selected work
             </Button>
           </div>
-          <p className="text-muted mt-8 text-sm">
-            {site.title} <span aria-hidden="true">·</span> {site.location}
-          </p>
+          <p className="text-muted mt-8 text-sm">{site.title}</p>
         </div>
         <HeroVisual />
       </div>

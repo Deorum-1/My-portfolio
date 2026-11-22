@@ -1,0 +1,51 @@
+---
+title: "How I added GSAP scroll animations without slowing the page down"
+slug: "gsap-scroll-animations"
+date: "2026-10-12"
+description: "Practical lessons for using GSAP scroll animations while protecting page speed and accessibility."
+tags: ["GSAP", "Performance", "Frontend"]
+---
+
+Motion can make a website feel intentional, but it can also become a layer of decoration that makes the page heavier. When I started using GSAP for scroll-driven interfaces, I learned that the visual result mattered less than the sequence of decisions behind it.
+
+## Start with the content hierarchy
+
+Before choosing an animation, I define what the user needs to understand. A hero headline should establish the promise, a project preview should show the work, and a process section should be easy to scan. The animation should guide attention between those points rather than compete with them.
+
+In practice, this means fewer effects and better timing. I would rather reveal one heading and its supporting paragraph at a consistent pace than animate every word, border, icon and card at the beginning of a section. A restrained effect is usually easier to read and easier to maintain.
+
+## Use scroll triggers only where they add meaning
+
+GSAP and ScrollTrigger are useful when movement has a clear relationship to reading or navigating. A browser frame that changes as a project image enters the viewport can support the story. Decorative particles moving continuously behind a paragraph rarely do.
+
+For normal page content, I prefer a short entrance animation that completes once. It gives the interface a sense of arrival without turning every scroll into an ongoing process. Long, continuous animation timelines are better reserved for a focused product demonstration or a deliberate portfolio hero moment.
+
+## Keep the layout stable
+
+One of my first checks is whether an animation changes a box's size or position at the wrong time. GSAP should not create a layout shift, especially near text or interactive elements. I keep initial states on the transform and opacity properties where possible, and I avoid animating width, height or large padding values during scroll.
+
+This makes the page feel more stable and gives the browser less layout work to repeat. It also makes debugging easier because the animated object follows a predictable path.
+
+## Account for reduced motion
+
+Accessibility is part of implementation, not a final polish. I detect the user's reduced-motion preference and disable or reduce movement before registering the animation. The content should remain available in a complete, static state rather than being hidden behind a timed entrance.
+
+That decision is as important for people using assistive technology as it is for anyone who simply prefers a calmer interface. An animation should never be required to understand the page.
+
+## Clean up timelines
+
+A scroll experience can leave behind listeners and timeline instances if it is not managed properly. In a React component, animation setup belongs in an effect or GSAP context that has a clear cleanup step. Repeated mounts, route navigation or Fast Refresh should not add duplicate triggers.
+
+Using a scoped context also makes it harder for one section's selectors to accidentally affect another component. It keeps motion local and predictable.
+
+## Measure after adding it
+
+There are several ways to keep a portfolio fast, and animation is only one of them. I still check the bundle, image size, loading behavior and the page on a slower device. If the final page feels heavy, I reduce the number of effects before replacing the entire approach.
+
+Core Web Vitals, especially responsiveness and visual stability, give a useful baseline. The important result is not simply a high animation score. It is a page that feels quick, communicates clearly and keeps the work in focus.
+
+## A simple rule
+
+My rule is now straightforward: animate to explain, to direct attention or to reveal something meaningful. Use the smallest implementation that achieves that purpose, respect the user's motion settings and clean up after the component leaves the page.
+
+GSAP is capable of complex sequences, but a portfolio does not need every one of them. The best motion is often the part users notice only because the rest of the experience feels clear and natural.

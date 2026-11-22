@@ -112,9 +112,9 @@ Build in this order. Test each on a phone-sized screen before moving on.
 
 ### Other pages
 
-- [ ] `/work/[slug]`: case study (goal, what you built, tools, result, screenshots, live link)
-- [ ] `/blog` and `/blog/[slug]`
-- [ ] A custom 404 page
+- [x] `/work/[slug]`: case study (goal, what you built, tools, result, screenshots, live link)
+- [x] `/blog` and `/blog/[slug]`
+- [x] A custom 404 page
 
 Warning: do not add testimonials, client names, awards or numbers you cannot prove. Add them later when you have real ones.
 
@@ -129,8 +129,8 @@ slug: "animated-gaming-site"
 summary: "An interactive gaming website with scroll and interaction animations."
 tags: ["React", "GSAP", "JavaScript"]
 liveUrl: "https://award-winning-website-with-reactjs.vercel.app"
-repoUrl: ""
-image: "/images/animated-gaming-site.webp"
+repoUrl: "https://github.com/Deorum-1/AWARD-WINNING-WEBSITE-WITH-REACTJS-AND-GSAP"
+image: "/images/animated-gaming-site.png"
 order: 1
 ---
 
@@ -144,9 +144,14 @@ order: 1
 ...
 ```
 
-- [ ] `animated-gaming-site.mdx`
-- [ ] `real-estate-listing-platform.mdx` (live: https://real-estate-website-five-bice.vercel.app)
-- [ ] `agency-ai.mdx` (repo: https://github.com/Deorum-1/Agency.ai)
+- [x] `animated-gaming-site.mdx`
+- [x] `real-estate-listing-platform.mdx` (live: https://real-estate-website-five-bice.vercel.app)
+- [x] `barrytech-website.mdx` (live: https://www.bsbl.com.ng)
+- [x] `secure-advance-information.mdx` (live: https://secure-advance-information.vercel.app)
+- [x] `potential-pillars.mdx` (live: https://potential-pillars.vercel.app)
+- [x] `movie-app.mdx` (live: https://movie-website-with-react-js-using-a.vercel.app)
+- [x] `portfolio.mdx` (live: https://portfolio-swart-psi-56.vercel.app)
+- [x] `agency-ai.mdx` (repo: https://github.com/Deorum-1/Agency.ai)
 
 Write a small function in `src/lib/content.ts` that reads these files with `gray-matter`, sorts by `order`, and returns them to the pages.
 
@@ -158,8 +163,8 @@ A blog helps people find you on Google. Start with three posts, each 600 to 900 
 2. "What a small business should know before hiring a web developer"
 3. "React vs Next.js: which one does your website need?"
 
-- [ ] Create `src/content/blog/` with the three MDX files (title, date, description, tags)
-- [ ] Blog list page, post page, reading time
+- [x] Create `src/content/blog/` with the three MDX files (title, date, description, tags)
+- [x] Blog list page, post page, reading time
 - [ ] Publish one new post a month
 
 ## 9. Phase 6: Contact form
@@ -225,7 +230,7 @@ Until you own a domain, Resend only lets you send from its test address to your 
 Paste this when you are ready to generate the code, then work through the phases above one at a time.
 
 ```
-You are a senior frontend engineer and designer. Build a portfolio website for Oluwaferanmi Sokunbi, a Frontend & Web Developer in Abeokuta, Nigeria, available for freelance and agency projects.
+You are a senior frontend engineer and designer. Build a portfolio website for Oluwaferanmi Sokunbi, a Frontend & Web Developer available for freelance and agency projects.
 
 Stack: Next.js App Router, TypeScript, Tailwind CSS, GSAP (ScrollTrigger), Motion, MDX content with gray-matter, Resend for the contact form, deploy on Vercel.
 

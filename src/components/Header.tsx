@@ -3,11 +3,11 @@ import Button from "@/components/Button";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
-  { label: "Work", href: "#work" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/#work" },
+  { label: "Services", href: "/#services" },
+  { label: "About", href: "/#about" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Header() {
@@ -15,7 +15,7 @@ export default function Header() {
     <header className="border-border/70 bg-background/90 sticky top-0 z-40 border-b backdrop-blur-md">
       <div className="max-w-content px-page mx-auto flex min-h-20 items-center justify-between gap-3">
         <Link
-          href="#top"
+          href="/"
           className="flex min-w-0 items-center gap-2.5 rounded-lg"
           aria-label="Oluwaferanmi Sokunbi, home"
         >
@@ -48,7 +48,7 @@ export default function Header() {
         <div className="flex shrink-0 items-center gap-2">
           <ThemeToggle />
           <Button
-            href="#contact"
+            href="/#contact"
             className="hidden px-4 text-xs sm:inline-flex"
           >
             Start a project
@@ -70,12 +70,12 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 className="bg-accent text-accent-foreground mt-1 rounded-xl px-3 py-2.5 text-sm font-semibold"
               >
                 Start a project
-              </a>
+              </Link>
             </nav>
           </details>
         </div>

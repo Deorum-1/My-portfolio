@@ -14,9 +14,9 @@ const headingFont = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Oluwaferanmi Sokunbi — Frontend & Web Developer",
+  title: "Oluwaferanmi Sokunbi — Full-Stack Developer",
   description:
-    "Frontend and web development for businesses and teams. Based in Abeokuta, Nigeria; available for freelance and agency projects.",
+    "Full-stack web development, API development, and polished animated frontends for businesses and teams. Available for freelance and full-time roles.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

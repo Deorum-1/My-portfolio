@@ -11,11 +11,11 @@ export default function Footer() {
   return (
     <footer className="border-border border-t">
       <div className="max-w-content px-page mx-auto flex flex-col gap-5 py-7 text-sm sm:flex-row sm:items-center sm:justify-between">
-        <Link href="#top" className="font-semibold tracking-tight">
+        <Link href="/" className="font-semibold tracking-tight">
           {site.name}
         </Link>
         <p className="text-muted">
-          {site.title} · {site.location}
+          {site.title}
         </p>
         <ul className="flex gap-4">
           {footerLinks.map((link) => (

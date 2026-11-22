@@ -22,7 +22,7 @@ const questions = [
   {
     question: "Do you work remotely?",
     answer:
-      "I’m based in Abeokuta, Nigeria, and available for freelance and agency projects. We can coordinate online and agree on a communication rhythm that fits the work.",
+      "I’m available for freelance and full-time roles. We can coordinate remotely and agree on a communication rhythm that fits the work.",
   },
 ];
 

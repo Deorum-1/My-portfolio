@@ -140,7 +140,8 @@ h4 {
   animation: marquee-scroll 32s linear infinite;
 }
 
-.marquee__track.is-paused {
+.marquee__window:hover .marquee__track,
+.marquee__window:focus .marquee__track {
   animation-play-state: paused;
 }
 
@@ -170,24 +171,6 @@ h4 {
   border-radius: 50%;
   background: var(--accent);
   content: "";
-}
-
-.marquee__toggle {
-  flex: 0 0 auto;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.55rem 0.8rem;
-  color: var(--foreground);
-  font-size: 0.7rem;
-  font-weight: 600;
-  transition:
-    background-color 180ms ease,
-    color 180ms ease;
-}
-
-.marquee__toggle:hover {
-  background: var(--foreground);
-  color: var(--background);
 }
 
 .section-heading {
@@ -258,6 +241,41 @@ h4 {
   transform: rotate(-24deg);
 }
 
+.project-expander {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-expander > summary {
+  order: 2;
+}
+
+.project-expander > summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-expander__content {
+  order: 1;
+}
+
+.project-expander__less,
+.project-expander[open] .project-expander__more {
+  display: none;
+}
+
+.project-expander[open] .project-expander__less {
+  display: inline;
+}
+
+.project-expander__icon {
+  display: inline-block;
+  transition: transform 200ms ease;
+}
+
+.project-expander[open] .project-expander__icon {
+  transform: rotate(180deg);
+}
+
 @keyframes marquee-scroll {
   to {
     transform: translateX(-50%);
@@ -306,8 +324,7 @@ h4 {
     padding-right: 0;
   }
 
-  .marquee__group + .marquee__group,
-  .marquee__toggle {
+  .marquee__group + .marquee__group {
     display: none;
   }
 }
