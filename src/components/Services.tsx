@@ -1,27 +1,27 @@
 const services = [
   {
     number: "01",
-    title: "Business websites",
+    title: "Responsive websites",
     description:
-      "Responsive, accessible pages that explain what you do and make the next step clear.",
+      "Modern, mobile-friendly websites with clear structure, polished layouts, and accessible details.",
   },
   {
     number: "02",
-    title: "Animated and interactive frontends",
+    title: "Interactive interfaces",
     description:
-      "Careful motion and interaction that add character without getting in the way.",
+      "Engaging React experiences with purposeful animation and interactions that feel natural.",
   },
   {
     number: "03",
-    title: "Full-stack web apps",
+    title: "React and Next.js development",
     description:
-      "End-to-end products with a polished UI, authentication, APIs and database integration.",
+      "Reusable components and well-crafted page flows for products, portfolios, and web apps.",
   },
   {
     number: "04",
-    title: "API development and integration",
+    title: "Frontend refresh and refinement",
     description:
-      "Clean APIs and third-party integrations for payments, data, authentication and services.",
+      "Improve an existing website with better usability, responsive behavior, accessibility, and performance.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function Services() {
           <div>
             <p className="eyebrow">What I do</p>
             <h2 id="services-title" className="section-title">
-              Useful websites, built with care.
+              Frontends built with care.
             </h2>
           </div>
           <p className="text-muted max-w-sm text-sm leading-6">

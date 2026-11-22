@@ -22,12 +22,12 @@ export default function Hero() {
             id="hero-title"
             className="font-display max-w-[13ch] text-[clamp(3rem,6.4vw,6.5rem)] leading-[0.94] font-medium tracking-[-0.075em]"
           >
-            Your business,
-            <span className="text-muted mt-1 block">better online.</span>
+            Frontend work,
+            <span className="text-muted mt-1 block">made to connect.</span>
           </h1>
           <p className="text-muted mt-7 max-w-xl text-base leading-7 sm:text-lg sm:leading-8">
-            I design and build complete web products, from polished animated
-            frontends to APIs and back-end systems, from first brief to launch.
+            I build responsive websites and expressive React interfaces, with
+            thoughtful motion, accessible details, and a sharp eye for design.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="#contact">Start a project</Button>

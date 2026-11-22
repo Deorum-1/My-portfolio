@@ -32,12 +32,12 @@ export default function SelectedWork() {
           <div>
             <p className="eyebrow">Selected work</p>
             <h2 id="work-title" className="section-title">
-              Projects made to solve real problems.
+              Frontend work, made to stand out.
             </h2>
           </div>
           <p className="text-muted max-w-sm text-sm leading-6">
-            Websites and applications, from interactive experiences to tools
-            for businesses and communities.
+            A selection of responsive websites and interfaces, with the design,
+            interaction, and detail kept in focus.
           </p>
         </div>
         <div className="border-border mt-8 flex items-center justify-between border-y py-3">

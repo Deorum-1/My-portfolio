@@ -14,9 +14,9 @@ const headingFont = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Oluwaferanmi Sokunbi — Full-Stack Developer",
+  title: "Oluwaferanmi Sokunbi — Frontend Developer",
   description:
-    "Full-stack web development, API development, and polished animated frontends for businesses and teams. Available for freelance and full-time roles.",
+    "Frontend developer creating responsive websites, polished React interfaces, and thoughtful web interactions. Available for freelance and full-time roles.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

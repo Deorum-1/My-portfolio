@@ -5,7 +5,7 @@ const experience = [
   {
     role: "Freelance",
     detail:
-      "Full-stack web development for businesses, agencies, and individuals.",
+      "Frontend development for business websites and interactive web experiences.",
   },
   { role: "Instructor", detail: "SAI" },
   { role: "Internship", detail: "ICTREC" },
@@ -15,15 +15,15 @@ const skills = [
   "React",
   "Next.js",
   "TypeScript",
-  "Node.js",
-  "Appwrite",
+  "JavaScript",
+  "Tailwind CSS",
   "GSAP",
 ];
 const focusAreas = [
-  "Business websites",
-  "Interactive frontends",
-  "Full-stack web apps",
-  "API development",
+  "Responsive websites",
+  "React interfaces",
+  "Motion and interaction",
+  "Accessible UI",
 ];
 
 export default function About() {
@@ -40,13 +40,12 @@ export default function About() {
             id="about-title"
             className="font-display mt-4 max-w-[12ch] text-4xl leading-[1.02] font-medium tracking-[-0.06em] sm:text-5xl"
           >
-            A thoughtful frontend partner for your next build.
+            Frontend details that make the whole experience.
           </h2>
           <p className="text-background/70 mt-6 max-w-xl text-base leading-7">
-            I’m {site.name}, a {site.title}. I work across the whole product:
-            React and Next.js on the front-end,
-            with Node.js and APIs on the back-end. I turn ideas and designs
-            into responsive, maintainable web experiences.
+            I’m {site.name}, a {site.title}. I turn ideas and visual direction
+            into fast, responsive websites and interfaces, with careful
+            attention to how every screen looks, feels, and works.
           </p>
           <p className="text-background/60 mt-4 max-w-xl text-sm leading-6">
             My experience includes freelance work, teaching at SAI, and an
@@ -94,7 +93,7 @@ export default function About() {
           </div>
           <div>
             <h3 className="text-background/55 text-xs font-semibold tracking-[0.18em] uppercase">
-              Project focus
+              Frontend focus
             </h3>
             <ul className="mt-4 flex flex-wrap gap-2">
               {focusAreas.map((area) => (

@@ -1,7 +1,7 @@
 export const site = {
   name: "Oluwaferanmi Sokunbi",
   fullName: "Sokunbi Oluwaferanmi Tantoolorun",
-  title: "Full-Stack Developer",
+  title: "Frontend Developer",
   availability: "Open to freelance and full-time roles",
   email: "feranmiisaac622@gmail.com",
   whatsapp: "https://wa.me/2349059730499",

@@ -7,8 +7,8 @@ Step-by-step build plan. Work through the phases in order and tick each box as y
 | Item | Decision |
 |---|---|
 | Owner | Oluwaferanmi Sokunbi (Sokunbi Oluwaferanmi Tantoolorun) |
-| Title | Frontend & Web Developer |
-| Audience | Anyone who needs web development services (businesses, agencies, individuals) |
+| Title | Frontend Developer |
+| Audience | Businesses, agencies, and individuals looking for frontend development |
 | Stack | Next.js (App Router) + TypeScript + Tailwind CSS + GSAP + Motion |
 | Content | MDX files in the repo (projects and blog) |
 | Contact form | Resend (emails you each enquiry) |
@@ -230,7 +230,7 @@ Until you own a domain, Resend only lets you send from its test address to your 
 Paste this when you are ready to generate the code, then work through the phases above one at a time.
 
 ```
-You are a senior frontend engineer and designer. Build a portfolio website for Oluwaferanmi Sokunbi, a Frontend & Web Developer available for freelance and agency projects.
+You are a senior frontend engineer and designer. Build a portfolio website for Oluwaferanmi Sokunbi, a Frontend Developer available for freelance and agency projects. Focus on responsive websites, polished React interfaces, accessibility and purposeful interaction; present projects through their frontend work.
 
 Stack: Next.js App Router, TypeScript, Tailwind CSS, GSAP (ScrollTrigger), Motion, MDX content with gray-matter, Resend for the contact form, deploy on Vercel.
 
