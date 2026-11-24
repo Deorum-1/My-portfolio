@@ -60,7 +60,7 @@ npm run dev
 
 Suggested folders:
 
-```
+
 src/
   app/
     layout.tsx

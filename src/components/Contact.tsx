@@ -1,12 +1,6 @@
 import Button from "@/components/Button";
 import { site } from "@/lib/site";
-
-const contacts = [
-  { label: "Email", href: `mailto:${site.email}` },
-  { label: "WhatsApp", href: site.whatsapp },
-  { label: "GitHub", href: site.github },
-  { label: "LinkedIn", href: site.linkedin },
-];
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
@@ -15,8 +9,8 @@ export default function Contact() {
       className="section-space border-border border-t"
       aria-labelledby="contact-title"
     >
-      <div className="max-w-content px-page mx-auto grid gap-10 md:grid-cols-[1fr_auto] md:items-end">
-        <div data-reveal>
+      <div className="max-w-content px-page mx-auto grid gap-10 lg:grid-cols-[0.8fr_1fr] lg:items-start">
+        <div data-reveal className="lg:sticky lg:top-28">
           <p className="eyebrow">Have something in mind?</p>
           <h2
             id="contact-title"
@@ -29,9 +23,8 @@ export default function Contact() {
             work together.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <Button href={`mailto:${site.email}`}>Start a project</Button>
             <Button
-              href={site.whatsapp}
+              href={`${site.whatsapp}?text=${encodeURIComponent("Hi Oluwaferanmi, I'd like to discuss a project.")}`}
               variant="outline"
               target="_blank"
               rel="noreferrer"
@@ -40,23 +33,9 @@ export default function Contact() {
             </Button>
           </div>
         </div>
-        <ul
-          className="flex flex-wrap gap-x-5 gap-y-3 md:max-w-48 md:flex-col md:items-start"
-          data-reveal
-        >
-          {contacts.slice(2).map((contact) => (
-            <li key={contact.label}>
-              <a
-                className="text-muted decoration-border hover:text-foreground text-sm underline underline-offset-4 transition-colors"
-                href={contact.href}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {contact.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="border-border rounded-2xl border p-5 sm:p-7" data-reveal>
+          <ContactForm />
+        </div>
       </div>
     </section>
   );

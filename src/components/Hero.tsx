@@ -35,7 +35,26 @@ export default function Hero() {
               Explore selected work
             </Button>
           </div>
-          <p className="text-muted mt-8 text-sm">{site.title}</p>
+          <dl className="border-border mt-9 grid max-w-xl grid-cols-3 gap-3 border-t pt-5">
+            <div>
+              <dt className="text-muted text-[0.65rem] font-semibold tracking-[0.14em] uppercase">
+                Focus
+              </dt>
+              <dd className="mt-1 text-sm font-semibold">React + Next.js</dd>
+            </div>
+            <div>
+              <dt className="text-muted text-[0.65rem] font-semibold tracking-[0.14em] uppercase">
+                Delivery
+              </dt>
+              <dd className="mt-1 text-sm font-semibold">Responsive</dd>
+            </div>
+            <div>
+              <dt className="text-muted text-[0.65rem] font-semibold tracking-[0.14em] uppercase">
+                Status
+              </dt>
+              <dd className="mt-1 text-sm font-semibold">Available</dd>
+            </div>
+          </dl>
         </div>
         <HeroVisual />
       </div>
